@@ -10,10 +10,10 @@ type RabbitmqOptions struct {
 
 func NewRabbitmqOptions() *RabbitmqOptions {
 	return &RabbitmqOptions{
-		Host:     "192.168.11.101",
+		Host:     "127.0.0.1",
 		Port:     5672,
 		Username: "dgmq-sz-bigdata",
-		Password: "bigdata123456",
+		Password: "3131",
 		Vhost:    "/queue_dfml_bigdata",
 	}
 }

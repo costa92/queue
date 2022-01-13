@@ -16,7 +16,7 @@ func main() {
 
 func receiver(rabbitServer *rabbit.Rabbitmq) {
 	// 第一个
-	queueInfo1 := rabbit.NewQueue("23423424", "exchange_queues_ml_headline_gift_msg", "route_queues_ml_headline_gift_msg", "topic")
+	queueInfo1 := rabbit.NewQueue("queuename", "exchange_queues_ml_headline_gift_msg", "route_queues_ml_headline_gift_msg", "topic")
 	prod := &Prod{queueInfo1}
 	rabbitServer.RegisterReceiver(prod) // 注册服务消息
 
